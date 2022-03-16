@@ -19,12 +19,14 @@ const ToDoForm = (props) => {
 
    return (
        <React.Fragment>
-            <div>Agregar tarea:</div>
-            <input type="text" placeholder='Nueva tarea' value={a} onChange={(e)=> {
-                setA(e.target.value)
-                }}/>
-            <button onClick={handleSubmit1} >Agregar</button>
-            <button onClick={handleSubmit2} >Borrar lista</button>
+           <div className='formTareas'>
+                <div>Add a task to Do:</div>
+                <input type="text" placeholder='New Task' value={a} onChange={(e)=> {
+                    setA(e.target.value)
+                    }}/>
+                <button className='button-10' onClick={handleSubmit1} >Add</button>
+                <button className='button-10' onClick={handleSubmit2} ><i className="fa fa-trash-o"></i> List</button>
+            </div>
        </React.Fragment>
    );
 };

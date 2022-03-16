@@ -2,19 +2,18 @@ import React from 'react';
 import ToDo from './ToDo';
 
 const ToDoList = (props) => {
-    console.log("render list:" , props);
-
     const elim = (idnum) => {
         props.eliminar(idnum)
     };
 
    return (
-       <React.Fragment>
-           <div>Lista de tareas por hacer:</div>
-           <ul>
+       <div className='anotador'>
+            <div className='listHeader'>Things to Do: {props.tareas.filter(el => el.completed === false).length}</div>
+            <div className='title'>List of things: </div>
+            <ul className='ul'>
                 {props.tareas.map((arr)=> <ToDo key={arr.id} tarea={arr} onChange={elim}/>)}
-           </ul>
-       </React.Fragment>
+            </ul>
+       </div>
    )
 };
  

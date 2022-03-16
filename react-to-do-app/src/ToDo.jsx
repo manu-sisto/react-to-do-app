@@ -1,21 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ToDo = (props) => {
+    const [disable, setDisable] = useState(false);
     function click() {
         props.onChange(props.tarea.id)
-        /*
-        props.setter((prevArr)=> {
-            const obj = {id: props.tarea.id, task: props.tarea.task, completed: true}
-            prevArr[props.tarea.id - 1] = obj;
-            return prevArr;
-        })
-        */
+        setDisable(true)
     };
 
    return (
        <React.Fragment>
-           <li className={props.tarea.completed? "done":" "} >{props.tarea.id + " " + props.tarea.task}</li> 
-           <button onClick={click}>X</button>
+            <li className={props.tarea.completed? "item done":"item"} >{props.tarea.id + ". " + props.tarea.task}
+                <button disabled={disable} className='button-10' onClick={click}> done! </button>
+            </li>
        </React.Fragment>
    );
 };
