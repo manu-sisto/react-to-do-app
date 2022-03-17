@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-to-do-app/static/css/main.69798837.css",
+    "main.js": "/react-to-do-app/static/js/main.579b6b8c.js",
+    "static/js/787.a0195c43.chunk.js": "/react-to-do-app/static/js/787.a0195c43.chunk.js",
+    "index.html": "/react-to-do-app/index.html",
+    "main.69798837.css.map": "/react-to-do-app/static/css/main.69798837.css.map",
+    "main.579b6b8c.js.map": "/react-to-do-app/static/js/main.579b6b8c.js.map",
+    "787.a0195c43.chunk.js.map": "/react-to-do-app/static/js/787.a0195c43.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69798837.css",
+    "static/js/main.579b6b8c.js"
+  ]
+}
